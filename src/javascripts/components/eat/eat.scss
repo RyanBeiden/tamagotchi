@@ -1,5 +1,35 @@
-@import '../../styles/styles.scss';
+@import '../../styles/styles';
+@import '../../styles/mixins'; 
 
-h1 {
-  color: $primary-color;
+.eat {
+  @include titleScore(3.5em, 60px 0px 20px 155px);
+}
+
+.full {
+  @include titleScore(6em, 0px 0px 0px 60px);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+
+  .fa-carrot {
+    @include icons(12px, 40px 10px 50px 50px);
+  }
+
+  .fa-carrot:hover {
+    @include iconsHover($eat-color);
+  }
+
+  .fa-ice-cream {
+    @include icons(12px 15px, 40px 0px 50px 10px);
+  }
+
+  .fa-ice-cream:hover {
+    @include iconsHover($eat-color);
+  }
+}
+
+#eat {
+  @include quad(#FF76DA, 20em 0em 0em 0em);
 }
