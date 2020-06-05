@@ -2,11 +2,11 @@
 @import '../../styles/mixins'; 
 
 .eat {
-  @include titleScore(3.5em, 60px 0px 20px 155px);
+  @include titleScore(3.5em, 60px 0px 20px 155px, center);
 }
 
 .full {
-  @include titleScore(6em, 0px 0px 0px 60px);
+  @include titleScore(6em, 0px 0px 0px 60px, center);
 }
 
 .icons {
@@ -18,11 +18,11 @@
   }
 
   .fa-carrot {
-    @include icons(12px);
+    @include icons(12px, $eat-color);
   }
 
   .fa-ice-cream {
-    @include icons(12px 15px);
+    @include icons(12px 15px, $eat-color);
   }
 
   .fa-carrot:hover {
@@ -35,5 +35,5 @@
 }
 
 #eat {
-  @include quad(#FF76DA, 20em 0em 0em 0em);
+  @include quad($eat-color, 20em 0em 0em 0em);
 }

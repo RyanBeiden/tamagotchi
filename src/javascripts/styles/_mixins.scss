@@ -1,5 +1,5 @@
-@mixin icons($padding) {
-  color: $eat-color;
+@mixin icons($padding, $color) {
+  color: $color;
   background-color: $secondary-color;
   border: 3px solid $secondary-color;
   border-radius: 20em;
@@ -22,10 +22,10 @@
   outline: none;
 }
 
-@mixin titleScore($font, $padding) {
+@mixin titleScore($font, $padding, $align) {
   color: $secondary-color;
   font-size: $font;
-  text-align: center;
+  text-align: $align;
   padding: $padding;
   margin: 0;
 }
