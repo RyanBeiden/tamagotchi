@@ -2,44 +2,35 @@ import './eat.scss';
 
 import utils from '../../../helpers/utils';
 
-let full = 80;
-
-const carrotEvent = (e) => {
-  e.preventDefault();
-  if (full <= 100) {
-    full += 10;
-  }
-  // eslint-disable-next-line no-use-before-define
-  checkNumber();
-};
-
-const iceCreamEvent = (e) => {
-  e.preventDefault();
-  if (full <= 100) {
-    full -= 3;
-  }
-  // eslint-disable-next-line no-use-before-define
-  checkNumber();
-};
+let full = 100;
 
 const eatQuad = () => {
   const domString = `
     <h2 class="eat">Eat</h2>
     <h3 class="full">${full}</h3>
     <div class="icons">
-      <a id="carrot"><i class="fas fa-carrot"></i></a>
-      <a id="ice-cream"><i class="fas fa-ice-cream"></i></a>
+      <button id="carrot"><i class="fas fa-carrot"></i></button>
+      <button id="ice-cream"><i class="fas fa-ice-cream"></i></button>
     </div>
   `;
   utils.printToDom('#eat', domString);
-  $('#carrot').click(carrotEvent);
-  $('#ice-cream').click(iceCreamEvent);
 };
 
-const checkNumber = () => {
-  if (full <= 100) {
-    eatQuad();
-  }
+const carrotEvent = (e) => {
+  e.preventDefault();
+  full = Math.min(full + 10, 100);
+  eatQuad();
 };
+
+const iceCreamEvent = (e) => {
+  e.preventDefault();
+  if (full > 0) {
+    full = Math.max(full - 3, 0);
+  }
+  eatQuad();
+};
+
+$('body').on('click', '#carrot', carrotEvent);
+$('body').on('click', '#ice-cream', iceCreamEvent);
 
 export default { eatQuad };

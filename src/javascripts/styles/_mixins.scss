@@ -1,11 +1,10 @@
-@mixin icons($padding, $margin) {
+@mixin icons($padding) {
   color: $eat-color;
   background-color: $secondary-color;
   border: 3px solid $secondary-color;
   border-radius: 20em;
   font-size: 3em;
   padding: $padding;
-  margin: $margin;
   transition: ease-in 200ms;
 }
 
@@ -14,6 +13,13 @@
   background-color: $color;
   border: 3px solid $secondary-color;
   cursor: pointer;
+}
+
+@mixin buttons($margin) {
+  margin: $margin;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 @mixin titleScore($font, $padding) {

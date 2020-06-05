@@ -13,16 +13,20 @@
   display: flex;
   justify-content: center;
 
+  button {
+    @include buttons(40px 0px 50px 10px);
+  }
+
   .fa-carrot {
-    @include icons(12px, 40px 10px 50px 50px);
+    @include icons(12px);
+  }
+
+  .fa-ice-cream {
+    @include icons(12px 15px);
   }
 
   .fa-carrot:hover {
     @include iconsHover($eat-color);
-  }
-
-  .fa-ice-cream {
-    @include icons(12px 15px, 40px 0px 50px 10px);
   }
 
   .fa-ice-cream:hover {
