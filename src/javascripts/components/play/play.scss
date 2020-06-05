@@ -1,1 +1,39 @@
 @import '../../styles/styles';
+@import '../../styles/mixins'; 
+
+.play {
+  @include titleScore(3.5em, 58px 0px 20px 50px, left);
+}
+
+.fun {
+  @include titleScore(6em, 0px 75px 0px 0px, center);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+
+  button {
+    @include buttons(40px 0px 50px 10px);
+  }
+
+  .fa-skiing {
+    @include icons(12px, $play-color);
+  }
+
+  .fa-bicycle {
+    @include icons(13px 9px, $play-color);
+  }
+
+  .fa-skiing:hover {
+    @include iconsHover($play-color);
+  }
+
+  .fa-bicycle:hover {
+    @include iconsHover($play-color);
+  }
+}
+
+#play {
+  @include quad($play-color, 0em 20em 0em 0em);
+}
