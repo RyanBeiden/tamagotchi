@@ -1,0 +1,38 @@
+@mixin icons($padding) {
+  color: $eat-color;
+  background-color: $secondary-color;
+  border: 3px solid $secondary-color;
+  border-radius: 20em;
+  font-size: 3em;
+  padding: $padding;
+  transition: ease-in 200ms;
+}
+
+@mixin iconsHover($color) {
+  color: $secondary-color;
+  background-color: $color;
+  border: 3px solid $secondary-color;
+  cursor: pointer;
+}
+
+@mixin buttons($margin) {
+  margin: $margin;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@mixin titleScore($font, $padding) {
+  color: $secondary-color;
+  font-size: $font;
+  text-align: center;
+  padding: $padding;
+  margin: 0;
+}
+
+@mixin quad($color, $radius) {
+  width: 350px;
+  background-color: $color;
+  border: 2px solid $color;
+  border-radius: $radius;
+}
