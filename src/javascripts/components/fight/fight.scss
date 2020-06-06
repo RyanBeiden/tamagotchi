@@ -1,1 +1,39 @@
 @import '../../styles/styles';
+@import '../../styles/mixins'; 
+
+.fight {
+  @include titleScore(3.5em, 40px 30px 20px 0px, center);
+}
+
+.strength {
+  @include titleScore(6em, 0px 0px 0px 20px, center);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+
+  button {
+    @include buttons(25px 0px 50px 10px);
+  }
+
+  .fa-running {
+    @include icons(12px 15px, $fight-color, 0px 0px 0px 0px);
+  }
+
+  .fa-hand-rock {
+    @include icons(13px 12px, $fight-color, 0px 0px 0px 120px);
+  }
+
+  .fa-running:hover {
+    @include iconsHover($fight-color);
+  }
+
+  .fa-hand-rock:hover {
+    @include iconsHover($fight-color);
+  }
+}
+
+#fight {
+  @include quad($fight-color, 0em 0em 0em 20em);
+}
