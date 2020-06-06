@@ -1,5 +1,22 @@
 @import '../../styles/styles';
-@import '../../styles/mixins'; 
+@import '../../styles/mixins';
+
+.reset {
+  @include outerParts(90%, 88%, 0%, 4%, 2.5em);
+
+  a {
+    border: 3px solid $primary-color;
+    padding: 6px 15px 8px 15px;
+    border-radius: 3em;
+    transition: ease-in 150ms;
+  }
+
+  a:hover {
+    background-color: $primary-color;
+    color: $base-color;
+    cursor: pointer;
+  }
+}
 
 .fight {
   @include titleScore(3.5em, 40px 30px 20px 0px, center);

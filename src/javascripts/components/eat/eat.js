@@ -4,10 +4,13 @@ import utils from '../../../helpers/utils';
 
 let full = 100;
 
-const eatQuad = () => {
+const eatQuad = (score) => {
   const domString = `
+    <div>
+      <h1 class="header">Tamagotchi</h1>
+    </div>
     <h2 class="eat">Eat</h2>
-    <h3 class="full">${full}</h3>
+    <h3 class="full">${score}</h3>
     <div class="icons">
       <button id="carrot"><i class="fas fa-carrot"></i></button>
       <button id="ice-cream"><i class="fas fa-ice-cream"></i></button>
@@ -19,7 +22,7 @@ const eatQuad = () => {
 const carrotEvent = (e) => {
   e.preventDefault();
   full = Math.min(full + 10, 100);
-  eatQuad();
+  eatQuad(full);
 };
 
 const iceCreamEvent = (e) => {
@@ -27,7 +30,7 @@ const iceCreamEvent = (e) => {
   if (full > 0) {
     full = Math.max(full - 3, 0);
   }
-  eatQuad();
+  eatQuad(full);
 };
 
 $('body').on('click', '#carrot', carrotEvent);

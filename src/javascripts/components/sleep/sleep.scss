@@ -1,5 +1,9 @@
 @import '../../styles/styles';
-@import '../../styles/mixins'; 
+@import '../../styles/mixins';
+
+.copyright {
+  @include outerParts(92%, 3%, 3%, 86%, 1.5em);
+}
 
 .sleep {
   @include titleScore(3.5em, 41px 30px 20px 0px, center);

@@ -1,6 +1,14 @@
 @import '../../styles/styles';
 @import '../../styles/mixins'; 
 
+.fa-github {
+  @include outerParts(3.5%, 3%, 90%, 94%, 3em);
+}
+
+.fa-github:hover {
+  color: $secondary-color;
+}
+
 .play {
   @include titleScore(3.5em, 58px 0px 20px 50px, left);
 }
