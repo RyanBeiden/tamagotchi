@@ -1,1 +1,40 @@
 @import '../../styles/styles';
+@import '../../styles/mixins'; 
+
+.sleep {
+  @include titleScore(3.5em, 41px 30px 20px 0px, center);
+}
+
+.energy {
+  @include titleScore(6em, 0px 90px 0px 0px, center);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+
+  button {
+    @include buttons(40px 0px 50px 10px);
+  }
+
+  .fa-bed {
+    @include icons(15.5px 10.5px, $sleep-color, 0px 0px 0px 0px);
+    font-size: 2.6em;
+  }
+
+  .nap-text {
+    @include icons(5px 14px 15px 14px, $sleep-color, 0px 140px 0px 0px);
+  }
+
+  .fa-bed:hover {
+    @include iconsHover($sleep-color);
+  }
+
+  .nap-text:hover {
+    @include iconsHover($sleep-color);
+  }
+}
+
+#sleep {
+  @include quad($sleep-color, 0em 0em 20em 0em);
+}
