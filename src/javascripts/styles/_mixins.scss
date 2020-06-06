@@ -1,3 +1,16 @@
+@mixin outerParts($top, $right, $bottom, $left, $font) {
+  position: absolute;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bottom;
+  font-size: $font;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+  transition: ease-in 150ms;
+}
+
 @mixin icons($padding, $color, $margin) {
   color: $color;
   background-color: $secondary-color;
