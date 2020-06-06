@@ -2,7 +2,15 @@
 @import '../../styles/mixins';
 
 .reset {
-  @include outerParts(90%, 88%, 0%, 4%, 2.5em);
+  // 576px window width and more
+  @include sm {
+    @include outerParts(4.8%, 50%, 3%, 46.5%, 1.5em);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include outerParts(92%, 85%, 3%, 5%, 1.5em);
+  }
 
   a {
     border: 3px solid $primary-color;
@@ -19,11 +27,27 @@
 }
 
 .fight {
-  @include titleScore(3.5em, 40px 30px 20px 0px, center);
+  // 576px window width and more
+  @include sm {
+    @include titleScore(3.5em, 40px 0px 0px 0px, center);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include titleScore(3.5em, 40px 30px 20px 0px, center);
+  }
 }
 
 .strength {
-  @include titleScore(6em, 0px 0px 0px 20px, center);
+  // 576px window width and more
+  @include sm {
+    @include titleScore(6em, 20px 0px 0px 0px, center);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include titleScore(6em, 0px 0px 0px 20px, center);
+  }
 }
 
 .icons {
@@ -38,8 +62,16 @@
     @include icons(12px 15px, $fight-color, 0px 0px 0px 0px);
   }
 
-  .fa-hand-rock {
-    @include icons(13px 12px, $fight-color, 0px 0px 0px 120px);
+  @include sm {
+    .fa-hand-rock {
+      @include icons(13px 12px, $fight-color, 0px);
+    }
+  }
+
+  @include lg {
+    .fa-hand-rock {
+      @include icons(13px 12px, $fight-color, 0px 0px 0px 120px);
+    }
   }
 
   .fa-running:hover {
@@ -52,5 +84,13 @@
 }
 
 #fight {
-  @include quad($fight-color, 0em 0em 0em 20em);
+  // 576px window width and more
+  @include sm {
+    @include phone($fight-color);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include quad($fight-color, 0em 0em 0em 20em);
+  }
 }

@@ -49,4 +49,27 @@
   background-color: $color;
   border: 2px solid $color;
   border-radius: $radius;
+  margin: 0;
+}
+
+@mixin phone($color) {
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 1em;
+  background-color: $color;
+  border: 2px solid $color;
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
 }

@@ -2,7 +2,7 @@
 @import '../../styles/mixins'; 
 
 .fa-github {
-  @include outerParts(3.5%, 3%, 90%, 94%, 3em);
+  @include outerParts(3.5%, 3%, 90%, 92%, 3em);
 }
 
 .fa-github:hover {
@@ -10,11 +10,27 @@
 }
 
 .play {
-  @include titleScore(3.5em, 58px 0px 20px 50px, left);
+  // 576px window width and more
+  @include sm {
+    @include titleScore(3.5em, 40px 0px 0px 0px, center);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include titleScore(3.5em, 58px 0px 20px 50px, left);
+  }
 }
 
 .fun {
-  @include titleScore(6em, 0px 75px 0px 0px, center);
+  // 576px window width and more
+  @include sm {
+    @include titleScore(6em, 20px 0px 0px 0px, center);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include titleScore(6em, 0px 75px 0px 0px, center);
+  }
 }
 
 .icons {
@@ -43,5 +59,13 @@
 }
 
 #play {
-  @include quad($play-color, 0em 20em 0em 0em);
+  // 576px window width and more
+  @include sm {
+    @include phone($play-color);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include quad($play-color, 0em 20em 0em 0em);
+  }
 }
