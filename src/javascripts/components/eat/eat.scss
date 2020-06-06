@@ -18,11 +18,11 @@
   }
 
   .fa-carrot {
-    @include icons(12px, $eat-color);
+    @include icons(12px, $eat-color, 0px);
   }
 
   .fa-ice-cream {
-    @include icons(12px 15px, $eat-color);
+    @include icons(12px 15px, $eat-color, 0px);
   }
 
   .fa-carrot:hover {

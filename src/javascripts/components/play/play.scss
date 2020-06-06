@@ -18,11 +18,11 @@
   }
 
   .fa-skiing {
-    @include icons(12px, $play-color);
+    @include icons(12px, $play-color, 0px);
   }
 
   .fa-bicycle {
-    @include icons(13px 9px, $play-color);
+    @include icons(13px 9px, $play-color, 0px);
   }
 
   .fa-skiing:hover {
