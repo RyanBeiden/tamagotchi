@@ -7,7 +7,8 @@ let full = 100;
 const eatQuad = (score) => {
   const domString = `
     <div>
-      <h1 class="header">Tamagotchi</h1>
+     <h1 class="header"><span class="pink">T</span><span class="blue">a</span><span class="yellow">m</span><span class="green">a</span><span class="pink">g</span>
+     <span style="margin-left: -21px;" class="blue">o</span><span class="yellow">t</span><span class="green">c</span><span class="pink">h</span><span class="blue">i</span></h1>
     </div>
     <h2 class="eat">Eat</h2>
     <h3 class="full">${score}</h3>
