@@ -1,5 +1,5 @@
-@import '../../styles/styles';
-@import '../../styles/mixins';
+@import '../../../styles/styles';
+@import '../../../styles/mixins'; 
 
 .copyright {
   @include outerParts(92%, 3%, 3%, 86%, 1.5em);
