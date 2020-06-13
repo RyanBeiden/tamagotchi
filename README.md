@@ -16,11 +16,19 @@ P.S. There's a surprise when you hover over the Tamagotchi title.
 
 ## View Project
 - Clone the repository 👉🏼 `https://github.com/RyanBeiden/tamagotchi.git`
+- Install Dependencies:
+  - Dev
+  ```
+  npm install @babel/core @babel/preset-env babel-loader css-loader eslint eslint-config-airbnb-base eslint-loader eslint-plugin-import file-loader html-loader html-webpack-plugin mini-css-extract-plugin node-sass sass-loader webpack webpack-cli webpack-dev-server --save-dev
+  ```
+  - Frontend
+  ```
+  npm install axios firebase jquery @fortawesome/fontawesome-free popper.js --save
+  ```
+- Run `npm start`
 
 ## View Responsive Format
-- Clone the repository 👉🏼 `https://github.com/RyanBeiden/tamagotchi.git`
-
-- Run `git checkout rb-responsive`
+- Run `git checkout rb-responsive` then `npm start`
 
 ## Technologies Used
 [![JavaScript](https://img.shields.io/badge/-JavaScript-2c9fcc?style=flat-square)](#) [![SASS](https://img.shields.io/badge/-SASS-2c9fcc?style=flat-square)](#)
