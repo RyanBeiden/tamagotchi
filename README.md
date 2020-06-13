@@ -17,6 +17,7 @@ P.S. There's a surprise when you hover over the Tamagotchi title.
 ## View Project
 - Clone the repository 👉🏼 `https://github.com/RyanBeiden/tamagotchi.git`
 - Install Dependencies:
+  
   **Dev**
   ```
   npm install @babel/core @babel/preset-env babel-loader css-loader eslint eslint-config-airbnb-base eslint-loader eslint-plugin-import file-loader html-loader html-webpack-plugin mini-css-extract-plugin node-sass sass-loader webpack webpack-cli webpack-dev-server --save-dev
