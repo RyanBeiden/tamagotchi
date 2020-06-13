@@ -1,5 +1,5 @@
-@import '../../styles/styles';
-@import '../../styles/mixins';
+@import '../../../styles/styles';
+@import '../../../styles/mixins'; 
 
 .reset {
   @include outerParts(90%, 88%, 0%, 4%, 2.5em);
