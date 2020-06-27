@@ -19,13 +19,9 @@ P.S. There's a surprise when you hover over the Tamagotchi title.
 - Install the dependencies 👉🏼 `$ npm install`
 - `$ npm start` to view 👀
 
-## View Responsive Format
-- Checkout to this branch 👉🏼 `$ git checkout rb-responsive`
-- `$ npm start` to view 👀
-
 ## Technologies Used
 [![JavaScript](https://img.shields.io/badge/-JavaScript-2c9fcc?style=flat-square)](#) [![SASS](https://img.shields.io/badge/-SASS-2c9fcc?style=flat-square)](#)
 
 #### Backlog/Roadmap
 
-- Build a progress bar displaying the average HP of all four quadrants
+- Build a progress bar displaying the total HP of all four sections

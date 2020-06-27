@@ -1,4 +1,5 @@
 @import 'styles';
+@import './mixins';
 
 body {
   background-color: $base-color;
@@ -6,6 +7,24 @@ body {
 }
 
 #app {
+  // 576px window width and more
+  @include sm {
+    display: block;
+  }
+
+  // 992px window width and more
+  @include lg {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: 40px auto 40px auto;
+    background-color: $base-color;
+    font-family: $primary-font;
+  }
+  
   display: flex;
   justify-content: center;
   flex-direction: row;

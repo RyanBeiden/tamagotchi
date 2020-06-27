@@ -1,16 +1,41 @@
 @import '../../../styles/styles';
-@import '../../../styles/mixins'; 
+@import '../../../styles/mixins';
 
 .copyright {
-  @include outerParts(92%, 3%, 3%, 86%, 1.5em);
+  // 576px window width and more
+  @include sm {
+    visibility: hidden;
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include outerParts(92%, 0%, 3%, 85%, 1.5em);
+    visibility: visible;
+  }
 }
 
 .sleep {
-  @include titleScore(3.5em, 41px 30px 20px 0px, center);
+  // 576px window width and more
+  @include sm {
+    @include titleScore(3.5em, 40px 0px 0px 0px, center);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include titleScore(3.5em, 41px 30px 20px 0px, center);
+  }
 }
 
 .energy {
-  @include titleScore(6em, 0px 90px 0px 0px, center);
+  // 576px window width and more
+  @include sm {
+    @include titleScore(6em, 20px 0px 0px 0px, center);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include titleScore(6em, 0px 90px 0px 0px, center);
+  }
 }
 
 .icons {
@@ -26,8 +51,16 @@
     font-size: 2.6em;
   }
 
-  .nap-text {
-    @include icons(5px 14px 15px 14px, $sleep-color, 0px 140px 0px 0px);
+  @include sm {
+    .nap-text {
+      @include icons(5px 14px 15px 14px, $sleep-color, 0px 10px 0px 0px);
+    }
+  }
+
+  @include lg {
+    .nap-text {
+      @include icons(5px 14px 15px 14px, $sleep-color, 0px 140px 0px 0px);
+    }
   }
 
   .fa-bed:hover {
@@ -40,5 +73,13 @@
 }
 
 #sleep {
-  @include quad($sleep-color, 0em 0em 20em 0em);
+  // 576px window width and more
+  @include sm {
+    @include phone($sleep-color);
+  }
+
+  // 992px window width and more
+  @include lg {
+    @include quad($sleep-color, 0em 0em 20em 0em);
+  }
 }
