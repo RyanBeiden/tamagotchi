@@ -66,3 +66,27 @@
     @include quad($eat-color, 20em 0em 0em 0em);
   }
 }
+
+.pink:hover {
+  color: #FF76DA;
+  cursor: default;
+  transition: ease-in 50ms;
+}
+
+.blue:hover {
+  color: #719CFF;
+  cursor: default;
+  transition: ease-in 50ms;
+}
+
+.yellow:hover {
+  color: #FFE972;
+  cursor: default;
+  transition: ease-in 50ms;
+}
+
+.green:hover {
+  color: #8BFF8F;
+  cursor: default;
+  transition: ease-in 50ms;
+}

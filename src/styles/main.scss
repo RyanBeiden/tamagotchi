@@ -24,4 +24,14 @@ body {
     background-color: $base-color;
     font-family: $primary-font;
   }
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 75px;
 }
