@@ -15,7 +15,7 @@ P.S. There's a surprise when you hover over the Tamagotchi title.
 ![Demo Preview of the Responsive Tamagotchi Site](./src/assets/tamagotchi-responsive-demo.gif)
 
 ## View Project
-- Clone the repository 👉🏼 `https://github.com/RyanBeiden/tamagotchi.git`
+- Clone the repository 👉🏼 `$ git clone https://github.com/RyanBeiden/tamagotchi.git`
 - Install the dependencies 👉🏼 `$ npm install`
 - `$ npm start` to view 👀
 
