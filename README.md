@@ -10,14 +10,17 @@ P.S. There's a surprise when you hover over the Tamagotchi title.
 
 ![Demo Preview of Tamagotchi Site](./src/assets/tamagotchi-site-demo.gif)
 
-## Preview Responsive Format
+#### Responsive Format
 
 ![Demo Preview of the Responsive Tamagotchi Site](./src/assets/tamagotchi-responsive-demo.gif)
 
-## View Project
-- Clone the repository 👉🏼 `$ git clone https://github.com/RyanBeiden/tamagotchi.git`
+## Deployed Project
+View [HERE](https://rb-tamagotchi.web.app/) 👀
+
+## Cloning the Repository
+- Clone it 👉🏼 `$ git clone https://github.com/RyanBeiden/tamagotchi.git`
 - Install the dependencies 👉🏼 `$ npm install`
-- `$ npm start` to view 👀
+- Run `$ npm start`
 
 ## Technologies Used
 [![JavaScript](https://img.shields.io/badge/-JavaScript-2c9fcc?style=flat-square)](#) [![SASS](https://img.shields.io/badge/-SASS-2c9fcc?style=flat-square)](#)
