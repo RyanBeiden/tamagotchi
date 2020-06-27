@@ -10,7 +10,9 @@ P.S. There's a surprise when you hover over the Tamagotchi title.
 
 ![Demo Preview of Tamagotchi Site](./src/assets/tamagotchi-site-demo.gif)
 
-#### Responsive Format
+---
+
+Responsive Format:
 
 ![Demo Preview of the Responsive Tamagotchi Site](./src/assets/tamagotchi-responsive-demo.gif)
 
