@@ -1,5 +1,5 @@
-@import '../../styles/styles';
-@import '../../styles/mixins'; 
+@import '../../../styles/styles';
+@import '../../../styles/mixins'; 
 
 .header {
   @include outerParts(3%, 82%, 85%, 3%, 3.4em);
