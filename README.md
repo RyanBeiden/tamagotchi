@@ -17,7 +17,7 @@ Responsive Format:
 ![Demo Preview of the Responsive Tamagotchi Site](./src/assets/tamagotchi-responsive-demo.gif)
 
 ## Deployed Project
-View [HERE](https://rb-tamagotchi.web.app/) 👀
+https://rb-tamagotchi.web.app/
 
 ## Cloning the Repository
 - Clone it 👉🏼 `$ git clone https://github.com/RyanBeiden/tamagotchi.git`
